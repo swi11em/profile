@@ -1,0 +1,163 @@
+#profile_picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 32px;
+}
+.cta {
+  background-color: #4e034e;
+  color: rgb(216, 194, 24);
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cta:hover {
+  background-color: #950895;
+}
+.container {
+  width:800px;
+  margin: auto;
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 10px 10px 0px rgb(216, 194, 24);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "jedi-font";
+  letter-spacing: 1.2px;
+}
+@font-face {
+  font-family: 'jedi-font';
+  src: url("./fonts/Starjout.ttf") format('truetype');
+}
+html {
+  background-image: url("./images/BG_star.jpg");
+}
+* {
+  cursor: url(https://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;
+}
+.profil_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cta_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 8px;
+  background-color: rgb(187, 178, 178);
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-content: center;
+}
+p {
+  margin: 24px auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(44, 43, 43);
+}
+li:hover {
+  background-color: #807f80;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 95%;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .profil_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile_picture {
+    margin-right: 0px;
+  }
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: -2;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
